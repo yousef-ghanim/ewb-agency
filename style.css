@@ -18,12 +18,18 @@ nav ul {
   border-top: 0.3rem solid var(--yellow-color);
   list-style: none;
   background-color: var(--black-color);
-  height: 7.88rem;
-  overflow: hidden;
   transition: all 0.3s ease;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+
+  justify-content: space-between;
 }
-.nav-active {
-  height: 35rem;
+nav ul li {
+  flex: 1 0 auto;
+}
+.logo-div {
+  margin-right: 5rem;
 }
 nav ul li a {
   display: block;
@@ -31,22 +37,24 @@ nav ul li a {
   text-decoration: none;
   font-size: 2rem;
   color: var(--yellow-color);
-  text-align: center;
 }
 nav ul li a:hover {
-  color: var(--black-color);
-  background-color: var(--yellow-color);
+  color: var(--white-color);
 }
 .logo {
-  display: flex;
-  justify-content: space-between;
+  display: block;
   font-size: 4rem;
-  align-items: center;
+  font-style: italic;
+  font-weight: 900;
+  text-align: center;
   background-color: var(--yellow-color);
   color: var(--black-color);
 }
-.logo div {
+.nav-btn {
   border-radius: 0.1rem;
+}
+.nav-btn {
+  display: none;
 }
 .bar1,
 .bar2,
@@ -66,29 +74,29 @@ nav ul li a:hover {
 .change .bar3 {
   transform: rotate(45deg) translate(-1px, -2px);
 }
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    overflow: visible;
-    height: auto;
-  }
-  nav ul li {
-    flex: 1 0 auto;
-  }
-  nav ul li a:hover {
-    color: var(--white-color);
-    background-color: var(--black-color);
-  }
-  .logo div {
-    display: none;
-  }
-  .logo {
     display: block;
-    text-align: center;
+    height: 7.88rem;
+    overflow: hidden;
   }
   .nav-active {
-    height: auto;
+    height: 35rem;
+  }
+  nav ul li a {
+    text-align: center;
+  }
+  .logo-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--yellow-color);
+    margin: 0;
+  }
+
+  .nav-btn {
+    display: block;
+    margin-right: 2rem;
+    cursor: pointer;
   }
 }
