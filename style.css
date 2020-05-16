@@ -14,6 +14,8 @@ html {
   font-size: 62.5%;
 }
 
+/* Nav */
+
 nav ul {
   border-top: 0.3rem solid var(--yellow-color);
   list-style: none;
@@ -100,3 +102,56 @@ nav ul li a:hover {
     cursor: pointer;
   }
 }
+
+/* End of Nav */
+
+/* Banner */
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/background-banner.jpg);
+  min-height: 89vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.banner-title {
+  color: white;
+  font-size: 5rem;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 900;
+
+  padding-bottom: 0.4rem;
+}
+.banner-underline {
+  height: 0.4rem;
+  width: 25rem;
+  background-color: var(--black-color);
+}
+.banner-btns {
+  margin: 3rem;
+}
+.banner-btns a {
+  font-size: 2.5rem;
+  padding: 1.5rem;
+  border: 0.2rem solid var(--yellow-color);
+  color: var(--yellow-color);
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0.5rem;
+}
+.banner-btns a:hover {
+  background-color: var(--yellow-color);
+  color: var(--white-color);
+}
+/* End of banner */
