@@ -157,43 +157,39 @@ header {
 /* End of banner */
 
 /* skills */
-.skills {
-  padding: 5rem 0;
+#skills {
+  padding: 3rem 0;
   background-color: var(--gray-color);
 }
 .skills-container {
-  /* text-align: center; */
-  margin: 0 auto;
-  max-width: 95vw;
+  /* max-width: 95vw; */
 }
 .skill {
   text-align: center;
-  /* width: 75%; */
   margin: 3rem 0;
 }
-.skill i {
+.fas {
   font-size: 5rem;
   color: var(--black-color);
 }
 .skills-title {
-  font-size: 4rem;
-  font-weight: 900;
-  margin: 2rem 0;
+  font-size: 3.5rem;
+  margin: 1.5rem 0;
 }
 .class-text {
   font-size: 2rem;
-  width: 75%;
-  margin: auto;
+  max-width: 75%;
+  margin: 0 auto;
 }
 @media (min-width: 700px) {
   .skills-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 5rem;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .skills-container {
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
 }
