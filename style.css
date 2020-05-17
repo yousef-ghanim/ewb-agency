@@ -157,51 +157,44 @@ header {
 /* End of banner */
 
 /* skills */
-.skills-container {
-  /* display: flex;
-  justify-content: space-around;
-  align-items: center; */
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  padding: 8rem 5rem;
-  grid-column-gap: 3rem;
+.skills {
+  padding: 5rem 0;
   background-color: var(--gray-color);
 }
-.skill {
-  /* width: 25%; */
-  text-align: center;
-  /* margin: 0 3rem; */
+.skills-container {
+  /* text-align: center; */
+  margin: 0 auto;
+  max-width: 95vw;
 }
-.skill a {
+.skill {
+  text-align: center;
+  /* width: 75%; */
+  margin: 3rem 0;
+}
+.skill i {
   font-size: 5rem;
   color: var(--black-color);
 }
 .skills-title {
-  margin-top: 1.5rem;
   font-size: 4rem;
   font-weight: 900;
-  text-transform: capitalize;
-  color: var(--yellow-color);
+  margin: 2rem 0;
 }
-.skill p {
+.class-text {
   font-size: 2rem;
-  margin-top: 2rem;
-  color: var(--white-color);
-  /* width: 100%; */
+  width: 75%;
+  margin: auto;
 }
-@media (max-width: 900px) {
+@media (min-width: 700px) {
   .skills-container {
+    display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5rem;
   }
 }
-@media (max-width: 670px) {
+@media (min-width: 1200px) {
   .skills-container {
-    display: block;
-  }
-  .skill p {
-    margin-bottom: 3rem;
-    max-width: 75%;
-    margin: 1rem auto 3rem auto;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 /* end of skills */
