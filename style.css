@@ -8,7 +8,7 @@
   --yellow-color: #dfb11c;
   --black-color: #0f0f0f;
   --white-color: #f3eaea;
-  --gray-color: #dacbcb;
+  --gray-color: #b4a5a5;
 }
 html {
   font-size: 62.5%;
@@ -155,3 +155,53 @@ header {
   color: var(--white-color);
 }
 /* End of banner */
+
+/* skills */
+.skills-container {
+  /* display: flex;
+  justify-content: space-around;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 8rem 5rem;
+  grid-column-gap: 3rem;
+  background-color: var(--gray-color);
+}
+.skill {
+  /* width: 25%; */
+  text-align: center;
+  /* margin: 0 3rem; */
+}
+.skill a {
+  font-size: 5rem;
+  color: var(--black-color);
+}
+.skills-title {
+  margin-top: 1.5rem;
+  font-size: 4rem;
+  font-weight: 900;
+  text-transform: capitalize;
+  color: var(--yellow-color);
+}
+.skill p {
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: var(--white-color);
+  /* width: 100%; */
+}
+@media (max-width: 900px) {
+  .skills-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 670px) {
+  .skills-container {
+    display: block;
+  }
+  .skill p {
+    margin-bottom: 3rem;
+    max-width: 75%;
+    margin: 1rem auto 3rem auto;
+  }
+}
+/* end of skills */
