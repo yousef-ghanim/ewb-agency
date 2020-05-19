@@ -175,11 +175,14 @@ header {
 .skills-title {
   font-size: 3.5rem;
   margin: 1.5rem 0;
+  text-transform: uppercase;
+  color: var(--yellow-color);
 }
 .class-text {
   font-size: 2rem;
   max-width: 75%;
   margin: 0 auto;
+  color: var(--white-color);
 }
 @media (min-width: 700px) {
   .skills-container {
@@ -194,3 +197,108 @@ header {
   }
 }
 /* end of skills */
+/* services */
+#services {
+  padding: 5rem 3rem;
+  background: url(./images/services.jpeg) center fixed no-repeat;
+  background-size: cover;
+}
+
+.services-header h1 {
+  font-size: 7rem;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 900;
+  text-align: center;
+}
+.services-header .underline {
+  width: 27rem;
+  border: 0.3rem solid var(--yellow-color);
+  margin: 0 auto;
+}
+.services-container {
+  margin: 5rem auto;
+}
+.services-item {
+  padding: 12rem 5rem;
+  position: relative;
+  overflow: hidden;
+}
+.services-item h1 {
+  font-size: 3rem;
+}
+.front-side {
+  text-align: center;
+  transition: transform 0.3s;
+}
+.front-side i {
+  font-size: 6rem;
+  color: var(--yellow-color);
+  margin-bottom: 5rem;
+}
+.black {
+  color: var(--white-color);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+.white {
+  color: var(--black-color);
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5)
+  );
+}
+.back-side {
+  position: absolute;
+  margin: 12rem 4rem;
+  transition: transform 0.3s;
+}
+.back-side p {
+  font-size: 2rem;
+  margin: 3rem 0 4rem 0;
+}
+.back-side a {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: var(--yellow-color);
+  border: 0.2rem solid var(--yellow-color);
+  padding: 1rem 1.5rem;
+  margin-top: 2rem;
+}
+.back-side a:hover {
+  background-color: var(--yellow-color);
+  color: var(--white-color);
+}
+.white .back-side a {
+  color: var(--black-color);
+  background-color: var(--yellow-color);
+}
+.white .back-side a:hover {
+  background-color: var(--black-color);
+  color: var(--yellow-color);
+  border: 0.2rem solid var(--black-color);
+}
+.services-item:hover .front-side {
+  transform: translateY(-190%);
+}
+.services-item:hover .back-side {
+  transform: translateY(-150%);
+}
+@media (min-width: 900px) {
+  .services-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .services-container .services-item:nth-of-type(1) {
+    order: 1;
+  }
+  .services-container .services-item:nth-of-type(2) {
+    order: 2;
+  }
+  .services-container .services-item:nth-of-type(3) {
+    order: 4;
+  }
+  .services-container .services-item:nth-of-type(4) {
+    order: 3;
+  }
+}
+/* end of services */
