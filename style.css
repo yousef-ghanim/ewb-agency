@@ -529,3 +529,32 @@ header {
   }
 }
 /* end of recent posts */
+/* footer */
+#footer {
+  background-color: var(--black-color);
+  padding: 3rem 0;
+}
+.footer-container {
+  max-width: 90vw;
+  margin: 0 auto;
+  color: var(--white-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.footer-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.social-media {
+  font-size: 3rem;
+}
+.social-media i {
+  transition: transform 1s ease;
+  margin: 0 0.5rem;
+}
+.social-media i:hover {
+  color: var(--yellow-color);
+  transform: translateY(-1rem);
+}
