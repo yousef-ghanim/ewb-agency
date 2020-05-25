@@ -9,6 +9,7 @@
   --black-color: #0f0f0f;
   --white-color: #f3eaea;
   --gray-color: #cfc2c2;
+  --light-gray-color: rgb(231, 225, 225);
 }
 html {
   font-size: 62.5%;
@@ -440,3 +441,91 @@ header {
   }
 }
 /* end of contact */
+
+/* recent posts */
+#posts {
+  padding: 5rem 0;
+  background-color: var(--gray-color);
+}
+.posts-title {
+  font-size: 6rem;
+  font-weight: 900;
+  font-style: italic;
+  text-align: center;
+  text-transform: uppercase;
+}
+.posts-underline {
+  width: 35rem;
+  border: 0.3rem solid var(--yellow-color);
+  margin: 0 auto;
+}
+.posts-container {
+  max-width: 90vw;
+  margin: 5rem auto;
+}
+.posts-item {
+  /* position: relative; */
+  margin: 2rem 0;
+  background-color: var(--light-gray-color);
+}
+.posts-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.posts-img img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease;
+}
+.posts-img i {
+  position: absolute;
+  color: var(--yellow-color);
+  opacity: 0;
+  transition: all 1s ease;
+}
+.posts-text {
+  padding: 2rem;
+}
+.posts-text h1 {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+.posts-text p {
+  font-size: 1.3rem;
+  margin: 2rem 0;
+}
+.posts-text a {
+  text-decoration: none;
+  color: var(--yellow-color);
+  font-size: 2rem;
+  border: 0.2rem solid var(--yellow-color);
+  padding: 0.4rem;
+}
+.posts-text a:hover {
+  background-color: var(--yellow-color);
+  color: var(--black-color);
+}
+.posts-img img:hover {
+  opacity: 0.5;
+}
+.posts-img:hover i {
+  opacity: 1;
+}
+@media (min-width: 600px) {
+  .posts-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+  }
+}
+@media (min-width: 900px) {
+  .posts-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+  }
+}
+/* end of recent posts */
